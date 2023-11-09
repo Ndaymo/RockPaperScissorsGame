@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper scissors game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lets play Rock-Paper-Scissors game</h1>
+      <h2>Can you beat the computer? Pick your hand</h2>
+    </header>
+
+    <div class="score-board">
+      <div id="user-label" class="badge">User</div>
+      <div id="computer-label" class="badge">Comp</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result"><p>You won</p></div>
+
+    <div id="choices">
+      <div class="choice" id="r">
+        <img src="Assets/rock.png" id="rock" alt="rock" />
+      </div>
+
+      <div class="choice" id="p">
+        <img src="Assets/paper.png" id="paper" />
+      </div>
+
+      <div class="choice" id="s">
+        <img src="Assets/scissors.png" id="scissors" />
+      </div>
+    </div>
+
+    <div id="action-message">Make your move. The computer has pciked</div>
+
+    <div class="refresh"><p>Play again</p></div>
+  </body>
+</html>
