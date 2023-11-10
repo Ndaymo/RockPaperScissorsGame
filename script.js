@@ -84,3 +84,7 @@ scissors_div.addEventListener('click', ()=> {
 }
 
 main();
+
+function restart() {
+  location.reload();
+}
