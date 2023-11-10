@@ -34,7 +34,6 @@ function win(userChoice, computerChoice){
 function lose(userChoice, computerChoice){
   computerScore++;
   computerScore_span.innerHTML = computerScore;
-  // computerImage.innerHTML = convertWords(computerChoice);
   result_p.innerHTML= convertWords(computerChoice) + " beats " + convertWords(userChoice) + ". You lost";
 };
 
