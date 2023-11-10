@@ -54,6 +54,14 @@ img {
     right: -25px;
 }
 
+#computer-image{
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 100px;
+  height: 100px;
+}
+
 .result {
     font-size: 40px;
     color: white;
@@ -80,6 +88,10 @@ img {
 .choice:hover {
 cursor: pointer; 
 background: orange;  
+}
+
+.choice:active {
+  scale: 1.1;
 }
 
 #action-message {

@@ -1,7 +1,7 @@
-// const computersPick = Math.floor(Math.random()*3) +1;
-// // console.log(computersPick);
+
 let userScore = 0;
 let computerScore = 0;
+let computerImage = document.getElementById('computer-image');
 const userScore_span = document.getElementById('user-score');
 const computerScore_span = document.getElementById('computer-score');
 const scoreBoard_div = document.querySelector('.scoreboard');
@@ -14,7 +14,6 @@ function getComputerChoice() {
   const choices = ['r', 'p', 's'];
   const randomNumber = (Math.floor(Math.random()*3));
   return choices[randomNumber];
-  console.log(choices[randomNumber]);
 }
 
 //console.log('');
@@ -35,11 +34,12 @@ function win(userChoice, computerChoice){
 function lose(userChoice, computerChoice){
   computerScore++;
   computerScore_span.innerHTML = computerScore;
-  result_p.innerHTML= convertWords(computerScore) + " beats " + convertWords(userChoice) + ". You lost";
+  // computerImage.innerHTML = convertWords(computerChoice);
+  result_p.innerHTML= convertWords(computerChoice) + " beats " + convertWords(userChoice) + ". You lost";
 };
 
 function draw(userChoice, computerChoice){
-  result_p.innerHTML= "It's a draw";
+  result_p.innerHTML= convertWords(computerChoice) + " is same " + convertWords(userChoice) + ". It's a draw";
 };
 
 
@@ -71,7 +71,7 @@ function game(userChoice) {
 function main(){
 
 rock_div.addEventListener('click', ()=> {
-  game('r');
+  game('r');  
 })
 
 paper_div.addEventListener('click', ()=> {
