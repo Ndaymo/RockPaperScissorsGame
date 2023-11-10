@@ -38,7 +38,7 @@ function lose(userChoice, computerChoice){
 };
 
 function draw(userChoice, computerChoice){
-  result_p.innerHTML= convertWords(computerChoice) + " is same " + convertWords(userChoice) + ". It's a draw";
+  result_p.innerHTML= convertWords(computerChoice) + " is same as " + convertWords(userChoice) + ". It's a draw";
 };
 
 
